@@ -3,12 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Newsletter subscription page"
 
     <link
       rel="icon"
       href="./assets/favicon.ico"
       type="image/x-icon"
       sizes="96x96"
+    />
+
+    <link
+      rel="preload"
+      href="./fonts/poppins-v24-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/poppins-v24-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/poppins-v24-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/inter-v20-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/inter-v20-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
 
     <style>
@@ -19,7 +56,7 @@
         font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
-        src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2");
+        src: url("./fonts/poppins-v24-latin-regular.woff2") format("woff2");
       }
 
       /* poppins-500 - latin */
@@ -28,7 +65,7 @@
         font-family: "Poppins";
         font-style: normal;
         font-weight: 500;
-        src: url("../fonts/poppins-v24-latin-500.woff2") format("woff2");
+        src: url("./fonts/poppins-v24-latin-500.woff2") format("woff2");
       }
 
       /* poppins-600 - latin */
@@ -37,7 +74,7 @@
         font-family: "Poppins";
         font-style: normal;
         font-weight: 600;
-        src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2");
+        src: url("./fonts/poppins-v24-latin-600.woff2") format("woff2");
       }
 
       /* inter-regular - latin */
@@ -46,7 +83,7 @@
         font-family: "Inter";
         font-style: normal;
         font-weight: 400;
-        src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        src: url("./fonts/inter-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
       }
 
       /* inter-600 - latin */
@@ -55,7 +92,7 @@
         font-family: "Inter";
         font-style: normal;
         font-weight: 600;
-        src: url("../fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        src: url("./fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
       }
 
       :root {
@@ -266,6 +303,8 @@
         <img
           src="./assets/logo.svg"
           alt="Logo with three vectored mountain drawn inside an hexagone"
+          width="52"
+          height="52"
         />
         <h1 class="text-heading">Join our newsletter</h1>
         <div>
