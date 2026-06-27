@@ -1,0 +1,125 @@
+/* FONTS */
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2");
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v24-latin-500.woff2") format("woff2");
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2");
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  /* COLORS */
+  --dark-gray: #6c727f;
+  --light-gray: #e5e7eb;
+  --lighter-gray: #f9fafb;
+  --pure-white: #ffffff;
+  --pure-black: #000000;
+  --blue: #284bce;
+  --darker-gray: #394150;
+
+  /* SEMANTIC TOKENS */
+  --heading: var(--pure-black);
+  --primary-text: var(--dark-gray);
+  --secondary-text: var(--darker-gray);
+  --bg-page: var(--pure-white);
+  --bg-button: var(--blue);
+  --bg-input-field: var(--lighter-gray);
+  --bg-card: var(--pure-white);
+  --border: var(--light-gray);
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+header,
+footer,
+main,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* TEXT PRESETS */
+.text-heading,
+.text-button-text {
+  font-weight: 600;
+}
+
+.text-button-text,
+.text-placeholder {
+  font-size: 1rem;
+}
+
+.text-subheading,
+.text-helper-text {
+  font-weight: 400;
+}
+
+.text-heading {
+  font-size: 3rem;
+}
+
+.text-subheading {
+  font-size: 1.25rem;
+}
+
+.text-placeholder {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.text-helper-text {
+  font-size: 0.875rem;
+}
