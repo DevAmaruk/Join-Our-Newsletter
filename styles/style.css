@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1.5rem;
+  row-gap: 3.75rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.main-content img {
+  max-width: 52px;
+  height: auto;
+}
+
+.main-content .text-heading {
+  font-size: clamp(2rem, 0.7143rem + 5.7143vw, 3rem);
+  color: var(--heading);
+}
+
+.main-content p {
+  letter-spacing: -0.01em;
+}
+
+.main-content .text-subheading {
+  font-size: clamp(1rem, 0.6786rem + 1.4286vw, 1.25rem);
+  color: var(--primary-text);
+}
+
+.user-interactions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.user-interactions input,
+.user-interactions button {
+  padding: 1.25rem 0.625rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.user-interactions input {
+  background-color: var(--bg-input-field);
+}
+
+.user-interactions input::placeholder {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.user-interactions button {
+  background-color: var(--bg-button);
+  color: var(--pure-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  transition:
+    transform ease 0.25s,
+    background-color ease-in 0.2s;
+}
+
+.user-interactions button:active {
+  transform: translateY(2px);
+  background-color: #899de2;
+}
+
+.user-interactions p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--secondary-text);
+}
+
+@media (min-width: 37rem) {
+  .main-content {
+    max-width: 720px;
+  }
+
+  .user-interactions {
+    max-width: 552px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 84.375rem) {
+  .user-interactions button {
+    transition: background-color ease 0.2s;
+  }
+
+  .user-interactions button:hover {
+    background-color: #dd8c13;
+    color: var(--pure-black);
+  }
+}
